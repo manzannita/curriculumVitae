@@ -5,11 +5,14 @@
     <meta name="keywords" content="currículum, vitae, CV, Annabella Sanchez, experiencia, educación">
     <meta name="description" content="Currículum Vitae de Annabella Sanchez. Experiencia profesional, formación académica y habilidades.">
     <meta name="author" content="Annabella Sanchez">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <title>Currículum Vitae - Annabella Sanchez</title>
 </head>
 <body>
     <header>
         <h1>Annabella Sanchez</h1>
+        <!-- Agrega el enlace en el menú de navegación -->
         <nav>
             <ul>
                 <li><a href="#perfil">Perfil</a></li>
@@ -17,29 +20,134 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
+            <h2 class="subtitle">Perfil</h2>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil de Annabella Sanchez" width="150" height="150" id="photo">
             <!-- Información sobre el perfil profesional -->
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <!-- Detalles de experiencia laboral -->
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <!-- Información académica -->
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <!-- Lista de habilidades -->
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <!-- Información de contacto -->
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label>Motivo de contacto:</label><br>
+                <input type="radio" id="consulta" name="motivo" value="consulta" required>
+                <label for="consulta">Consulta</label><br>
+                <input type="radio" id="trabajo" name="motivo" value="trabajo">
+                <label for="trabajo">Oportunidad de trabajo</label><br>
+                <input type="radio" id="colaboracion" name="motivo" value="colaboracion">
+                <label for="colaboracion">Colaboración</label><br>
+                <input type="radio" id="otro" name="motivo" value="otro">
+                <label for="otro">Otro</label><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <br>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9493536721806!2d-79.96772813040997!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b6b6e2c1%3A0x6e7a6c6b6e6e6e6e!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716134400000!5m2!1ses!2sec" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <section id="referencias">
+            <h2 class="subtitle">Referencias</h2>
+            <blockquote>
+                "Annabella demostró gran profesionalismo y dedicación en todos los proyectos en los que participó."
+            </blockquote>
+            <p>
+                <span>María López</span><br>
+                Gerente de Proyectos en TechSolutions<br>
+                Trabajó con Annabella durante 2 años liderando equipos multidisciplinarios en desarrollo de software.
+            </p>
+            <blockquote>
+                "Su capacidad de adaptación y aprendizaje rápido fue clave para el éxito del equipo."
+            </blockquote>
+            <p>
+                <span>Carlos Pérez</span><br>
+                Jefe de Desarrollo en Innovatech<br>
+                Colaboró con Annabella en la implementación de soluciones tecnológicas innovadoras.
+            </p>
+            <blockquote>
+                "Annabella siempre aporta ideas creativas y mantiene una excelente comunicación con sus colegas."
+            </blockquote>
+            <p>
+                <span>Lucía Ramírez</span><br>
+                Directora de Recursos Humanos en GlobalCorp<br>
+                Supervisó a Annabella en proyectos de capacitación y desarrollo organizacional.
+            </p>
+        </section>
+        <section id="extras">
+            <h2 class="subtitle">Información adicional</h2>
+            <!-- Párrafo con enlace -->
+            <p>
+                Para más información sobre mi formación, visita el sitio web de 
+                <a href="https://www.espol.edu.ec" target="_blank" rel="noopener">ESPOL</a>.
+            </p>
+
+            <!-- Lista ordenada -->
+            <h3>Pasos para contactar</h3>
+            <ol>
+                <li>Completa el formulario de contacto.</li>
+                <li>Selecciona el motivo de tu mensaje.</li>
+                <li>Haz clic en "Enviar".</li>
+            </ol>
+
+            <!-- Lista no ordenada -->
+            <h3>Habilidades principales</h3>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Comunicación efectiva</li>
+                <li>Resolución de problemas</li>
+            </ul>
+
+            <!-- Tabla sin bordes -->
+            <h3>Idiomas</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Español</th>
+                    <th>Inglés</th>
+                </tr>
+                <tr>
+                    <th>Hablado</th>
+                    <td>Avanzado</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <th>Escrito</th>
+                    <td>Avanzado</td>
+                    <td>Básico</td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>
