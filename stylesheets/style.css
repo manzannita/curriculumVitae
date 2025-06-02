@@ -44,6 +44,20 @@ nav > ul {
     /* Eliminar los estilos de lista predeterminados */
     list-style: none;
 
+    /* 1. Activar Flexbox */
+    display: flex;
+
+    /* 2. Distribuir el espacio equitativamente entre los ítems */
+    justify-content: space-evenly;
+
+    /* 3. Organizar los hijos en una fila horizontal */
+    flex-direction: row;
+
+    /* 4. Alinear verticalmente los ítems en el centro */
+    align-items: center;
+
+    /* 5. Separación uniforme de 1rem entre ítems */
+    gap: 1rem;
 }
 section {
     border: 0.2pt solid #cedddd;
@@ -54,3 +68,62 @@ section {
     -moz-border-radius: 5px;
     border-radius: 5px;
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
+section > form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+#referencias {
+
+     /* Activa el modelo Flexbox */
+     display: flex;
+
+     /* Permite que los hijos pasen a la siguiente línea si no caben */
+     flex-wrap: wrap;
+
+     /* Espaciado uniforme entre filas y columnas */
+     gap: 1rem;
+
+}
+
+#referencias > h2 {
+
+     /* Hace que el subtítulo ocupe el 100% del ancho del contenedor */
+     flex: 0 0 100%;
+
+}
+
+#referencias > article {
+
+     /* Distribuye equitativamente los artículos en tres columnas */
+     flex: 1 1 calc(33.333% - 1rem);
+
+}
+
+.experience { padding: 2rem; }
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: ""; position: absolute;
+  left: 1rem; top: 0; bottom: 0;
+  width: 2px; background: #ccc;
+}
+.timeline-item { display: flex; margin-bottom: 2rem; }
+.timeline-marker {
+  width: 1rem; height: 1rem; border-radius: 50%;
+  background: #9a0965; margin-right: 1rem; margin-top: 0.5rem;
+}
+.job-card {
+  background: #fafafa; padding: 1rem; border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.job-card:hover { transform: translateY(-4px); }
+.job-card header { display: flex; align-items: center; margin-bottom: 0.5rem; }
+.job-card .logo {
+  width: 40px; height: 40px; border-radius: 50%; margin-right: 0.75rem;
+}
+.job-card h3 { margin: 0; font-size: 1.1rem; }
+.job-card .company { font-size: 0.9rem; color: #555; }
+.job-card time { font-size: 0.8rem; color: #888; display: block; }
+.job-card ul { margin: 0.5rem 0 0 1rem; padding: 0; list-style-type: disc; }
