@@ -1,188 +1,347 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="currículum, vitae, CV, Annabella Sanchez, experiencia, educación">
-    <meta name="description" content="Currículum Vitae de Annabella Sanchez. Experiencia profesional, formación académica y habilidades.">
-    <meta name="author" content="Annabella Sanchez">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="./stylesheets/style.css">
-    <title>Currículum Vitae - Annabella Sanchez</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="currículum, vitae, CV, Annabella Sanchez, experiencia, educación">
+  <meta name="description" content="Currículum Vitae de Annabella Sanchez. Experiencia profesional, formación académica y habilidades.">
+  <meta name="author" content="Annabella Sanchez">
+
+  <!-- Carga de Google Fonts necesarias -->
+  <!-- Montserrat 700 (titulares) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    rel="stylesheet"
+  >
+  <!-- Lora 400 + Italic (subtítulos, usaremos oblique vía font-style) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400&display=swap"
+    rel="stylesheet"
+  >
+  <!-- Hind Madurai 300 (texto de párrafo) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Currículum Vitae - Annabella Sanchez</title>
 </head>
 <body>
-    <header>
-        <h1>Annabella Sanchez</h1>
-        <!-- Agrega el enlace en el menú de navegación -->
-        <nav>
+  <!-- HEADER con Nombre y Navegación -->
+  <header>
+    <h1>Annabella Sanchez</h1>
+    <nav>
+      <ul>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+        <li><a href="#extras">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECCIÓN: PERFIL -->
+    <section id="perfil">
+      <h2 class="subtitle">Perfil</h2>
+      <img
+        src="https://placehold.co/150x150/bae8e8/272343?text=AS"
+        alt="Foto de perfil de Annabella Sanchez"
+        id="photo"
+      />
+      <p>
+        Soy Analista de Datos y Desarrolladora Web con experiencia en proyectos de investigación,
+        docencia y desarrollo de soluciones tecnológicas. Me apasiona crear visualizaciones
+        intuitivas y aportar al aprendizaje de nuevos programadores.
+      </p>
+    </section>
+
+    <!-- SECCIÓN: EXPERIENCIA LABORAL -->
+    <section id="experiencia" class="experience">
+      <h2 class="subtitle">Experiencia Laboral</h2>
+      <div class="timeline">
+        <!-- Punto 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="job-card">
+            <header>
+              <img
+                src="https://placehold.co/50x50/272343/ffd803?text=E"
+                alt="Logo ESPOL"
+                class="logo"
+              />
+              <div>
+                <h3>Ayudante de Fundamentos de Programación</h3>
+                <span class="company">ESPOL</span>
+                <time datetime="2024-05">May 2024 – Actualidad</time>
+              </div>
+            </header>
             <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias">Referencias</a></li>
+              <li>Brindé apoyo académico a estudiantes que cursaban la materia de programación.</li>
+              <li>Organicé actividades dinámicas para mejorar el proceso de aprendizaje.</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="perfil">
-            <h2 class="subtitle">Perfil</h2>
-            <img src="https://placehold.co/150x150" alt="Foto de perfil de Annabella Sanchez" width="150" height="150" id="photo">
-            <!-- Información sobre el perfil profesional -->
-        </section>
-        <section class="experience">
-            <h2>Experiencia Laboral</h2>
-            <div class="timeline">
-                <!-- Punto 1 -->
-                <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="job-card">
-                    <header>
-                    <img src="./ESPOL_-_Logo_001.png" alt="Logo Espol" class="logo">
-                    <div>
-                        <h3>Ayudante de Fundamentos de Programación</h3>
-                        <span class="company">ESPOL</span>
-                        <time>May 2024 – Actualidad</time>
-                    </div>
-                    </header>
-                    <ul>
-                    <li>Brindé apoyo académico a estudiantes que cursaban la materia de programación.</li>
-                    <li>Organicé actividades dinámicas para mejorar el proceso de aprendizaje.</li>
-                    </ul>
-                </div>
-                <!-- Punto 2 -->
-                <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="job-card">
-                    <!-- …siguiente empleo… -->
-                </div>
-                </div>
+          </div>
+        </div>
+
+        <!-- Punto 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="job-card">
+            <header>
+              <img
+                src="https://placehold.co/50x50/272343/ffd803?text=XYZ"
+                alt="Logo Empresa XYZ"
+                class="logo"
+              />
+              <div>
+                <h3>Desarrolladora Web Freelance</h3>
+                <span class="company">Empresa XYZ</span>
+                <time datetime="2023-01">Ene 2023 – Abr 2024</time>
+              </div>
+            </header>
+            <ul>
+              <li>Construí prototipos de sitios web responsivos usando HTML, CSS y JavaScript.</li>
+              <li>Implementé un panel de administración en React para administración de contenidos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: EDUCACIÓN -->
+    <section id="educacion">
+      <h2 class="subtitle">Educación</h2>
+      <div class="education-container">
+        <div class="education-item">
+          <div class="education-icon">🎓</div>
+          <div class="education-content">
+            <h3>Ingeniería en Ciencias de la Computación</h3>
+            <h4>ESPOL</h4>
+            <span class="education-date">2019 – 2024</span>
+            <p>Formación integral en ciencias de la computación con énfasis en desarrollo de software y análisis de datos.</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="education-icon">📜</div>
+          <div class="education-content">
+            <h3>Certificado en Business Intelligence</h3>
+            <h4>Coursera</h4>
+            <span class="education-date">2022</span>
+            <p>Especialización en herramientas de inteligencia de negocios y análisis de datos empresariales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: HABILIDADES -->
+    <section id="habilidades">
+      <h2 class="subtitle">Habilidades</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Habilidades Técnicas</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span>Python / PySpark / SQL</span>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
             </div>
-        </section>
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            <!-- Información académica -->
-        </section>
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <!-- Lista de habilidades -->
-        </section>
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <!-- Información de contacto -->
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+            <div class="skill-item">
+              <span>Power BI / DAX / Visualización de datos</span>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>HTML5 / CSS3 / JavaScript</span>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>React.js / Flask</span>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Habilidades Blandas</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Trabajo en equipo</span>
+            <span class="skill-tag">Comunicación efectiva</span>
+            <span class="skill-tag">Resolución de problemas</span>
+            <span class="skill-tag">Análisis de datos</span>
+            <span class="skill-tag">Modelado predictivo</span>
+            <span class="skill-tag">Liderazgo</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+    <!-- SECCIÓN: CONTACTO -->
+    <section id="contacto">
+      <h2 class="subtitle">Contacto</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
+        </div>
 
-                <label>Motivo de contacto:</label><br>
-                <input type="radio" id="consulta" name="motivo" value="consulta" required>
-                <label for="consulta">Consulta</label><br>
-                <input type="radio" id="trabajo" name="motivo" value="trabajo">
-                <label for="trabajo">Oportunidad de trabajo</label><br>
-                <input type="radio" id="colaboracion" name="motivo" value="colaboracion">
-                <label for="colaboracion">Colaboración</label><br>
-                <input type="radio" id="otro" name="motivo" value="otro">
-                <label for="otro">Otro</label><br><br>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+        </div>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+        <div class="form-group">
+          <label>Motivo de contacto:</label>
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="consulta" name="motivo" value="consulta" required />
+              <label for="consulta">Consulta</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="trabajo" name="motivo" value="trabajo" />
+              <label for="trabajo">Oportunidad de trabajo</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="colaboracion" name="motivo" value="colaboracion" />
+              <label for="colaboracion">Colaboración</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="otro" name="motivo" value="otro" />
+              <label for="otro">Otro</label>
+            </div>
+          </div>
+        </div>
 
-                <button type="submit">Enviar</button>
-            </form>
-            <br>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9493536721806!2d-79.96772813040997!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b6b6e2c1%3A0x6e7a6c6b6e6e6e6e!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716134400000!5m2!1ses!2sec" 
-                width="100%" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-        <section id="referencias">
-            <h2 class="subtitle">Referencias</h2>
-            <article>
-                <blockquote>
-                    "Annabella demostró gran profesionalismo y dedicación en todos los proyectos en los que participó."
-                </blockquote>
-                <p>
-                    <span>María López</span><br>
-                    Gerente de Proyectos en TechSolutions<br>
-                    Trabajó con Annabella durante 2 años liderando equipos multidisciplinarios en desarrollo de software.
-                </p>
-            </article>
-            <article>
-                <blockquote>
-                    "Su capacidad de adaptación y aprendizaje rápido fue clave para el éxito del equipo."
-                </blockquote>
-                <p>
-                    <span>Carlos Pérez</span><br>
-                    Jefe de Desarrollo en Innovatech<br>
-                    Colaboró con Annabella en la implementación de soluciones tecnológicas innovadoras.
-                </p>
-            </article>
-            <article>
-                <blockquote>
-                    "Annabella siempre aporta ideas creativas y mantiene una excelente comunicación con sus colegas."
-                </blockquote>
-                <p>
-                    <span>Lucía Ramírez</span><br>
-                    Directora de Recursos Humanos en GlobalCorp<br>
-                    Supervisó a Annabella en proyectos de capacitación y desarrollo organizacional.
-                </p>
-            </article>
-        </section>
-        <section id="extras">
-            <h2 class="subtitle">Información adicional</h2>
-            <!-- Párrafo con enlace -->
-            <p>
-                Para más información sobre mi formación, visita el sitio web de 
-                <a href="https://www.espol.edu.ec" target="_blank" rel="noopener">ESPOL</a>.
-            </p>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
 
-            <!-- Lista ordenada -->
-            <h3>Pasos para contactar</h3>
-            <ol>
-                <li>Completa el formulario de contacto.</li>
-                <li>Selecciona el motivo de tu mensaje.</li>
-                <li>Haz clic en "Enviar".</li>
-            </ol>
+        <button type="submit" class="btn">✉️ Enviar Mensaje</button>
+      </form>
 
-            <!-- Lista no ordenada -->
-            <h3>Habilidades principales</h3>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación efectiva</li>
-                <li>Resolución de problemas</li>
-            </ul>
+      <div class="map-container">
+        <h3>📍 Ubicación</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9493536721806!2d-79.96772813040997!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b6b6e2c1%3A0x6e7a6c6b6e6e6e6e!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716134400000!5m2!1ses!2sec"
+          width="100%"
+          height="300"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
 
-            <!-- Tabla sin bordes -->
-            <h3>Idiomas</h3>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Español</th>
-                    <th>Inglés</th>
-                </tr>
-                <tr>
-                    <th>Hablado</th>
-                    <td>Avanzado</td>
-                    <td>Intermedio</td>
-                </tr>
-                <tr>
-                    <th>Escrito</th>
-                    <td>Avanzado</td>
-                    <td>Básico</td>
-                </tr>
-            </table>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Annabella Sanchez
-    </footer>
+    <!-- SECCIÓN: REFERENCIAS -->
+    <section id="referencias">
+      <h2>Referencias</h2>
+
+      <article>
+        <blockquote>
+          "Annabella demostró gran profesionalismo y dedicación en todos los proyectos en los que participó."
+        </blockquote>
+        <p>
+          <strong>María López</strong><br />
+          Gerente de Proyectos en TechSolutions<br />
+          Trabajó con Annabella durante 2 años liderando equipos multidisciplinarios en desarrollo de software.
+        </p>
+      </article>
+
+      <article>
+        <blockquote>
+          "Su capacidad de adaptación y aprendizaje rápido fue clave para el éxito del equipo."
+        </blockquote>
+        <p>
+          <strong>Carlos Pérez</strong><br />
+          Jefe de Desarrollo en Innovatech<br />
+          Colaboró con Annabella en la implementación de soluciones tecnológicas innovadoras.
+        </p>
+      </article>
+
+      <article>
+        <blockquote>
+          "Annabella siempre aporta ideas creativas y mantiene una excelente comunicación con sus colegas."
+        </blockquote>
+        <p>
+          <strong>Lucía Ramírez</strong><br />
+          Directora de Recursos Humanos en GlobalCorp<br />
+          Supervisó a Annabella en proyectos de capacitación y desarrollo organizacional.
+        </p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN: INFORMACIÓN ADICIONAL (EXTRAS) -->
+    <section id="extras">
+      <h2 class="subtitle">Información adicional</h2>
+
+      <!-- Párrafo con enlace -->
+      <p>
+        Para más información sobre mi formación, visita el sitio web de
+        <a href="https://www.espol.edu.ec" target="_blank" rel="noopener">ESPOL</a>.
+      </p>
+
+      <!-- Lista ordenada -->
+      <div class="info-block">
+        <h3>📋 Pasos para contactar</h3>
+        <ol>
+          <li>Completa el formulario de contacto.</li>
+          <li>Selecciona el motivo de tu mensaje.</li>
+          <li>Haz clic en "Enviar".</li>
+        </ol>
+      </div>
+
+      <!-- Lista no ordenada -->
+      <div class="info-block">
+        <h3>⭐ Habilidades principales</h3>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación efectiva</li>
+          <li>Resolución de problemas</li>
+        </ul>
+      </div>
+
+      <!-- Tabla de idiomas -->
+      <div class="info-block">
+        <h3>🌍 Idiomas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Español</th>
+              <th>Inglés</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Hablado</th>
+              <td>Avanzado</td>
+              <td>Intermedio</td>
+            </tr>
+            <tr>
+              <th>Escrito</th>
+              <td>Avanzado</td>
+              <td>Básico</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Annabella Sanchez - Diseñado con 💖</p>
+  </footer>
 </body>
 </html>
